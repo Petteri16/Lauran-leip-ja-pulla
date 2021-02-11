@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  p {
+    color:  rgb(253, 153, 051);
+    margin-left: 90;
+
+  }
+
+  h2 {
+    padding:10;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(102, 000, 000);
+
+  }
+  h3 {
+    text-align: center;
+    color:rgb(253, 153, 051)
+
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(253, 153, 051);
+    height: 150px;
+    border: solid;
+    border-width: 5px;
+
+    
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    margin-top: 20;
+    margin-right: 30;
+    height: 680px;
+    width: 10%;
+    background: rgb(102, 000, 000);
+    padding: 20px;
+    border: solid;
+    border-width: 2,5px;
+  
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10;
+  }
+
+  nav a {
+    color: rgb(253, 153, 051);
+    text-decoration: none;
+    text-transform: uppercase;
+
+  }
+    
+  
+  /* Style the content */
+  article {
+    margin-top: 20;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: rgb(102, 000, 000);
+    padding: 10px;
+    border: solid;
+    border-width: 5px;
+    height: 680px;
+    
+    
+  }
+
+  .kuva1 {
+    float: right;
+    margin-right: 50;
+   
+
+  }
+  .kuva2 {
+    float: left;
+    margin-top: 50;
+  
+
+  }
+  .content1 {
+    margin-top: 60;
+    margin-right: 60;
+
+  }
+  .kuva3 {
+    float: right;
+    margin-right: 50;
+    border: solid;
+    border-width: 5px;
+
+  }
+  .make-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  
+
+  }
+  /* Style the footer */
+  footer {
+    background-color: rgb(102, 000, 000);
+    padding: 9;
+    font-size: 15;
+    height: fit-content;
+    text-align: center;
+    color:  rgb(253, 153, 051);
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+  
+
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
